@@ -1,0 +1,28 @@
+{
+  "name": "playwright-typescript-api-tests",
+  "version": "1.0.0",
+  "description": "API test automation framework built with Playwright and TypeScript — smoke, end-to-end, and destructive (negative) testing against a REST API.",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:e2e": "playwright test --grep @e2e",
+    "test:negative": "playwright test --grep @negative",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "api-testing",
+    "automation",
+    "qa",
+    "sdet"
+  ],
+  "author": "Aswini",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
